@@ -1,7 +1,4 @@
-import styled from "styled-components";
-const Imagee = styled.img`
-    
-`
+
  
 const Image = (props)=>
 {

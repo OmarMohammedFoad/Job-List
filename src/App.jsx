@@ -6,7 +6,6 @@ import Main from './components/Main';
 import Data from "./data.json"
 import { useState } from 'react';
 import Search from './components/Search';
-import {Row,Column} from 'simple-flexbox';
 import styled from 'styled-components';
 
   const All = styled.div`
@@ -18,6 +17,12 @@ import styled from 'styled-components';
         width:375;
       }
     }
+  `
+  const Flexx= styled.div`
+    display:flex;
+    flex-grow:1;
+    justify-content:center;
+    
   `
 
 
@@ -77,12 +82,12 @@ function App() {
 
   return (
     <All>
-    <Column flexGrow={1} >
-    <Row  horizontal='center'>
+    <>
+    <>
      <Header/>
-    </Row>
-    <Row vertical='center'>
-      <Column flexGrow={1} horizontal='center'>
+    </>
+    <>
+      <Flexx>
         <Search  data={filter} clear={CLearAll}  clearone={CLearOne}  />
         <Main data={filteredJobs}
               handlefilter={Handlefilter}
@@ -91,9 +96,9 @@ function App() {
               
               
         />
-      </Column>
-    </Row>
-  </Column>
+      </Flexx>
+    </>
+  </>
   </All>
   );
 }

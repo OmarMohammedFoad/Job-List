@@ -3,14 +3,13 @@ import styled from "styled-components";
 
 const Display= styled.div`
 display:flex;
-flex-flow:row;
+
 width:970px;
 height: 65px;
 z-index:1;
-position: absolute;
+position:absolute;
 border-radius: 10px;
 bottom:500px;  
-align-items:center;
 font-size:15px;
 color: hsl(0, 12.499999999999948%, 90.58823529411765%);
 background-color:#ffff;
@@ -43,7 +42,6 @@ const Icon = styled.button`
    background-color:#85bbbb;
    margin-left:10px;
    padding-right:20px;
-   align-content: center;
    color:white;
    font-weight: bolder;
    border:none;
