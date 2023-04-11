@@ -27,13 +27,7 @@ border-radius: 5px;
 font-size:15px;
 color: hsl(180, 29%, 50%);
 background-color: #e7feff;
-@media (min-width: 375px ){
-          width: 375px;
-        
-        display:grid;
-        grid-column: auto;
-          
-  }
+
 `
 const Clear = styled.button`
 color:#85bbbb;
