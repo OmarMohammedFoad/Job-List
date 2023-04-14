@@ -1,8 +1,17 @@
 
+ import styled from "styled-components";
+ const Images = styled.img`
+   @media (max-width: 376px) {
+    width:70px;
+    position:relative;
+    bottom:40px;
+    z-index:1;
+   }
  
+ `
 const Image = (props)=>
 {
-return  (<img src={props.data.logo} alt={props.data.company} />)
+return  (<Images src={props.data.logo} alt={props.data.company} />)
 
 }
 export default Image;

@@ -9,10 +9,24 @@ height: 65px;
 z-index:1;
 position:absolute;
 border-radius: 10px;
-bottom:500px;  
+
+top:60px;  
 font-size:15px;
 color: hsl(0, 12.499999999999948%, 90.58823529411765%);
 background-color:#ffff;
+
+@media  (max-width: 376px) {
+   z-index:1;
+  
+   position: absolute;
+   top:45px;  
+
+    width:200px;
+    height:auto;
+    display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 5px;
+   }
 
 `
 
@@ -26,6 +40,11 @@ border-radius: 5px;
 font-size:15px;
 color: hsl(180, 29%, 50%);
 background-color: #e7feff;
+@media (max-width:376px) {
+  
+}
+
+
 
 `
 const Clear = styled.button`
@@ -36,6 +55,9 @@ margin-right:20px;
 padding:10px;
 background-color:white;
 font-weight: bold;
+@media (max-width:376px) {
+   margin-left:auto;
+}
 
 `
 const Icon = styled.button`
@@ -55,8 +77,9 @@ const Search  = (props)=>
    
    
     return( 
-    <Display>
       
+   props.data.length === 0 ? <></>:  <Display>
+      {props.data?console.log(true):console.log(false)}
        {props.data.map((d,indx)=><Inside key={indx}>{d} <Icon onClick={()=>props.clearone(indx)}>x</Icon> </Inside> )}
        <Clear onClick={()=>props.clear()}><u>Clear</u></Clear>
     </Display>)

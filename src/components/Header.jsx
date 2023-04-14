@@ -6,8 +6,9 @@ width:100%;
 border:1px solid;
 `
 const Image = styled.img`
-    border-radius:40px;
+    /* border-radius:40px; */
     width:100%;
+    height:100px;
 `
 
 function Header() {
