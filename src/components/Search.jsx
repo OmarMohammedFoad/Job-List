@@ -15,7 +15,7 @@ font-size:15px;
 color: hsl(0, 12.499999999999948%, 90.58823529411765%);
 background-color:#ffff;
 
-@media  (max-width: 376px) {
+@media  (max-width: 421px) {
    z-index:1;
   
    position: absolute;

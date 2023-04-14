@@ -5,7 +5,7 @@ display:flex;
 flex-flow:column;
 font-size:15px;
 color: hsl(180, 29%, 50%);
-@media (max-width:376px) {
+@media (max-width:821px) {
   flex-direction:column;
     position: relative;
     bottom:50px;

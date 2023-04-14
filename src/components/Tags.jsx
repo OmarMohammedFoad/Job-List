@@ -17,7 +17,7 @@ const LangTool = styled.button`
 const ToolLangss = styled.div`
   display:flex;
   flex-flow:row;
-  @media (max-width: 376px) {
+  @media (max-width: 821px) {
     display:grid;
     position: relative;
     bottom:80px;

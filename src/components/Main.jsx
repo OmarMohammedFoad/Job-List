@@ -29,7 +29,7 @@ const Container = styled.div`
         width: 1001px;
         height: 155px;
         color:wheat;
-        @media (max-width: 376px ){
+        @media (max-width: 821px ){
           flex-direction:column;
          
           width: 350px;
