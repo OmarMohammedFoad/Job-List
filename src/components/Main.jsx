@@ -21,7 +21,6 @@ const Container = styled.div`
         flex-direction:row;
         border-radius: 0.5em;
         padding: 2.22em 2.78em;
-          border-left: .33rem solid hsl(180deg 28% 48%);
 
         margin-top: 20px;
         background: #ffff;
@@ -38,26 +37,31 @@ const Container = styled.div`
           margin-bottom:20px;
 
           
-          }
+          } 
       gap:20px;
+    
         
   `
 function Main  ({data,handlefilter})
 {
   
+
+  
+  // "`${data.new? ".33rem solid hsl(180deg 28% 48%)" :""}`
   return( 
   <Container>
   {
   data.map(data=>
-  <MiniContainer key={data.id}>
+  <MiniContainer  style={{"border-left": `${data.new? ".2rem solid hsl(180deg 28% 48%)" : "" }`  }}   key={data.id}>
+
   <Image data={data} />
   <Job data={data} />
   <Tags data={data}
+  
         Hhandlefilter={handlefilter}
        
         
   />
-    
 </MiniContainer>
 )}
 </Container> );
